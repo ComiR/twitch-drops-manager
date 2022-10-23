@@ -1,9 +1,4 @@
+import { initialize } from "./OverviewTab";
 import "./style/main.less";
 
-async function main() {
-  console.log("script start");
-}
-
-main().catch((e) => {
-  console.log(e);
-});
+initialize().catch((e) => console.error(e));
