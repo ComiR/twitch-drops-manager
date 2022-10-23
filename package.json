@@ -1,14 +1,13 @@
 {
-  "name": "webpack-userscript-template",
-  "description": "Build your UserScript with webpack",
-  "version": "0.0.0",
+  "name": "twich-drops-manager",
+  "description": "Twitch Drops Manager",
+  "version": "dev",
   "author": {
-    "name": "Trim21",
-    "email": "trim21me@gmail.com"
+    "name": "ComiR",
+    "email": "twitch-drops-manager@DiComo.de"
   },
   "scripts": {
     "format": "prettier -w ./",
-    "analize": "cross-env npm_config_report=true npm run build",
     "build": "webpack --config config/webpack.config.prod.cjs",
     "dev": "webpack --config config/webpack.config.dev.cjs",
     "prepare": "husky install",
@@ -16,12 +15,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trim21/webpack-userscript-template"
+    "url": "https://github.com/ComiR/twitch-drops-manager"
   },
   "private": true,
   "dependencies": {
-    "@trim21/gm-fetch": "^0.1.6",
-    "jquery": "^3.6.1"
+    "@trim21/gm-fetch": "^0.1.6"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json}": [
@@ -29,9 +27,8 @@
     ]
   },
   "devDependencies": {
-    "@types/greasemonkey": "^4.0.4",
-    "@types/jquery": "^3.5.14",
     "@types/node": "^18.11.3",
+    "@types/tampermonkey": "^4.0.5",
     "browserslist": "^4.21.4",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
