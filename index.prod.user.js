@@ -1,17 +1,13 @@
 // ==UserScript==
-// @name        webpack-userscript-template
-// @name:cn     中文名
-// @name:en     english name
-// @namespace   https://trim21.me/
-// @version     0.0.0
-// @author      Trim21 <trim21me@gmail.com>
-// @source      https://github.com/trim21/webpack-userscript-template
-// @match       *://www.example.com/
-// @match       *://example.com/*
-// @require     https://cdn.jsdelivr.net/npm/jquery@^3.6.1/dist/jquery.min.js
+// @author      ComiR <twitch-drops-manager@DiComo.de>
 // @grant       GM.xmlHttpRequest
-// @connect     httpbin.org
+// @match       https://twitch.tv/inventory
+// @name        twich-drops-manager
+// @name:en     Twitch Drops Manager
+// @namespace   https://DiComo.de/
 // @run-at      document-end
+// @source      https://github.com/ComiR/twitch-drops-manager
+// @version     0.0.0
 // ==/UserScript==
 
 /******/ (() => { // webpackBootstrap
