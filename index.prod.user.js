@@ -1,13 +1,11 @@
 // ==UserScript==
-// @author      ComiR <twitch-drops-manager@DiComo.de>
-// @grant       GM.xmlHttpRequest
-// @match       https://twitch.tv/inventory
-// @name        twich-drops-manager
-// @name:en     Twitch Drops Manager
-// @namespace   https://DiComo.de/
-// @run-at      document-end
-// @source      https://github.com/ComiR/twitch-drops-manager
-// @version     0.0.0
+// @name          twich-drops-manager
+// @name:en       Twitch Drops Manager
+// @author        ComiR <twitch-drops-manager@DiComo.de>
+// @description   Twitch Drops Manager
+// @match         https://*.twitch.tv/drops/*
+// @source        https://github.com/ComiR/twitch-drops-manager
+// @version       dev
 // ==/UserScript==
 
 /******/ (() => { // webpackBootstrap
@@ -558,81 +556,10 @@ var update = injectStylesIntoStyleTag_default()(main/* default */.Z, options);
 
        /* harmony default export */ const style_main = (main/* default */.Z && main/* default.locals */.Z.locals ? main/* default.locals */.Z.locals : undefined);
 
-;// CONCATENATED MODULE: ./node_modules/@trim21/gm-fetch/dist/index.mjs
-async function GM_fetch(input, init) {
-    const request = new Request(input, init);
-    let data;
-    if (init?.body) {
-        data = await request.text();
-    }
-    return await XHR(request, data);
-}
-function XHR(request, data) {
-    return new Promise((resolve, reject) => {
-        GM.xmlHttpRequest({
-            url: request.url,
-            method: gmXHRMethod(request.method.toUpperCase()),
-            headers: toGmHeaders(request.headers),
-            data: data,
-            onload: (res) => resolve(parseGMResponse(res)),
-            onerror: (err) => reject(new TypeError("Failed to fetch: " + err.finalUrl)),
-        });
-    });
-}
-function parseGMResponse(res) {
-    return new Response(res.responseText, {
-        statusText: res.statusText,
-        status: res.status,
-        headers: parseRawHeaders(res.responseHeaders),
-    });
-}
-const httpMethods = ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "TRACE", "OPTIONS", "CONNECT"];
-// a ts type helper to narrow type
-function includes(array, element) {
-    return array.includes(element);
-}
-function gmXHRMethod(method) {
-    if (includes(httpMethods, method)) {
-        return method;
-    }
-    throw new Error(`unsupported http method ${method}`);
-}
-function toGmHeaders(h) {
-    if (!h) {
-        return undefined;
-    }
-    const t = {};
-    h.forEach((value, key) => {
-        t[value] = key;
-    });
-    return t;
-}
-function parseRawHeaders(h) {
-    const array = h
-        .trim()
-        .split("\r\n")
-        .map((value) => {
-        let s = value.split(": ");
-        return [s[0], s[1]];
-    });
-    return new Headers(array);
-}
-
-
-
 ;// CONCATENATED MODULE: ./src/index.ts
-
-//checkout homepage https://github.com/Trim21/gm-fetch for @trim21/gm-fetch
 
 async function src_main() {
     console.log("script start");
-    // cross domain requests
-    console.log(`uuid: ${await fetchExample()}`);
-}
-async function fetchExample() {
-    const res = await GM_fetch("https://httpbin.org/uuid");
-    const data = await res.json();
-    return data.uuid;
 }
 src_main().catch((e) => {
     console.log(e);
