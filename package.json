@@ -19,7 +19,8 @@
   },
   "private": true,
   "dependencies": {
-    "@trim21/gm-fetch": "^0.1.6"
+    "@trim21/gm-fetch": "^0.1.6",
+    "wait-for-the-element": "^4.0.1"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json}": [
