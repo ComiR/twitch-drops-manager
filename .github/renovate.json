@@ -14,7 +14,6 @@
     "schedule:yearly",
     "security:openssf-scorecard"
   ],
-  "osvVulnerabilityAlerts": true,
   "postUpdateOptions": ["npmDedupe"],
   "transitiveRemediation": true
 }
