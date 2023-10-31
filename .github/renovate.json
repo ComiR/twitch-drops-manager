@@ -9,6 +9,7 @@
     ":maintainLockFilesMonthly",
     ":npm",
     ":timezone(Europe/Berlin)",
+    "group:allNonMajor",
     "npm:unpublishSafe",
     "schedule:yearly",
     "security:openssf-scorecard"
