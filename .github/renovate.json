@@ -11,8 +11,7 @@
     ":timezone(Europe/Berlin)",
     "group:allNonMajor",
     "npm:unpublishSafe",
-    "schedule:yearly",
-    "security:openssf-scorecard"
+    "schedule:yearly"
   ],
   "osvVulnerabilityAlerts": true,
   "postUpdateOptions": ["npmDedupe"],
