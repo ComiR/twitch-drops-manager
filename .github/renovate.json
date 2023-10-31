@@ -11,9 +11,19 @@
     ":timezone(Europe/Berlin)",
     "group:allNonMajor",
     "npm:unpublishSafe",
-    "schedule:yearly"
+    "schedule:yearly",
+    "security:openssf-scorecard"
   ],
   "osvVulnerabilityAlerts": true,
   "postUpdateOptions": ["npmDedupe"],
+  "prBodyColumns": [
+        "Package",
+        "Change",
+        "Age",
+        "Adoption",
+        "Passing",
+        "Confidence",
+        "OpenSSF"
+  ],
   "transitiveRemediation": true
 }
