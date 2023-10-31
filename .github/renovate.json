@@ -1,13 +1,19 @@
 {
-  "extends": ["schedule:monthly", ":masterIssue", "config:base"],
-  "prHourlyLimit": 0,
-  "lockFileMaintenance": {
-    "extends": ["schedule:weekly"],
-    "automerge": true,
-    "enabled": true
-  },
+  "extends": [
+    "config:best-practices",
+    ":assignAndReview(ComiR)",
+    ":combinePatchMinorReleases",
+    ":disableRateLimiting",
+    ":enableRenovate",
+    ":enableVulnerabilityAlerts",
+    ":maintainLockFilesMonthly",
+    ":npm",
+    ":timezone(Europe/Berlin)",
+    "npm:unpublishSafe",
+    "schedule:yearly",
+    "security:openssf-scorecard"
+  ],
+  "osvVulnerabilityAlerts": true,
   "postUpdateOptions": ["npmDedupe"],
-  "separateMajorMinor": false,
-  "updateNotScheduled": false,
-  "rangeStrategy": "bump"
+  "transitiveRemediation": true
 }
