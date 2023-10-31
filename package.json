@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@types/node": "20.8.9",
-    "@types/tampermonkey": "4.20.4",
+    "@types/tampermonkey": "5.0.0",
     "browserslist": "4.22.1",
     "cross-env": "7.0.3",
     "css-loader": "6.8.1",
