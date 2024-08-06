@@ -14,13 +14,11 @@
     "schedule:yearly"
   ],
   "osvVulnerabilityAlerts": true,
-  "postUpdateOptions": ["npmDedupe"],
-  "transitiveRemediation": true,
+  "postUpdateOptions": [
+    "npmDedupe"
+  ],
   "packageRules": [
     {
-      "matchSourceUrlPrefixes": [
-        "https://github.com/"
-      ],
       "prBodyDefinitions": {
         "OpenSSF": "[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/{{sourceRepo}}/badge)](https://securityscorecards.dev/viewer/?uri=github.com/{{sourceRepo}})"
       },
@@ -32,6 +30,9 @@
         "Passing",
         "Confidence",
         "OpenSSF"
+      ],
+      "matchSourceUrls": [
+        "https://github.com/{/,}**"
       ]
     }
   ]
