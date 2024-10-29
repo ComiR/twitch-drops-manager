@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4.2.2
       - name: Setup node
-        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: "lts/*"
           cache: "npm"
