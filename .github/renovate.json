@@ -10,7 +10,7 @@
     ":npm",
     ":timezone(Europe/Berlin)",
     "group:allNonMajor",
-    "npm:unpublishSafe",
+    "security:minimumReleaseAgeNpm",
     "schedule:yearly"
   ],
   "osvVulnerabilityAlerts": true,
