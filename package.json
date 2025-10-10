@@ -19,7 +19,7 @@
   },
   "private": true,
   "dependencies": {
-    "@trim21/gm-fetch": "^0.1.16",
+    "@trim21/gm-fetch": "^0.3.0",
     "wait-for-the-element": "^4.0.2"
   },
   "lint-staged": {
