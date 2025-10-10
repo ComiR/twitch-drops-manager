@@ -28,15 +28,15 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "22.18.9",
+    "@types/node": "24.7.1",
     "@types/tampermonkey": "5.0.4",
     "browserslist": "4.26.3",
-    "cross-env": "7.0.3",
+    "cross-env": "10.1.0",
     "css-loader": "7.1.2",
     "husky": "9.1.7",
     "less": "4.4.2",
     "less-loader": "12.3.0",
-    "lint-staged": "15.5.2",
+    "lint-staged": "16.2.3",
     "prettier": "3.6.2",
     "style-loader": "4.0.0",
     "ts-loader": "9.5.4",
@@ -44,7 +44,7 @@
     "userscript-metadata-webpack-plugin": "0.4.2",
     "webpack": "5.102.1",
     "webpack-bundle-analyzer": "4.10.2",
-    "webpack-cli": "5.1.4",
+    "webpack-cli": "6.0.1",
     "webpack-livereload-plugin": "3.0.2",
     "webpack-merge": "6.0.1",
     "webpack-sources": "3.3.3"
